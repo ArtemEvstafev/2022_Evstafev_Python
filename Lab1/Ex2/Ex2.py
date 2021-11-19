@@ -3,7 +3,7 @@ import matplotlib.animation as animation
 
 
 def animate(i):
-    plt.title(f'Frame {i + 1}')
+    #plt.title(f'Frame {i + 1}')
     line.set_ydata([float(i) for i in a[1 + 2 * i].split()])
     return line,
 
