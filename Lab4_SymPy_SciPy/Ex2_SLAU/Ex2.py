@@ -1,7 +1,7 @@
 import numpy as np
 from scipy import linalg
 import matplotlib.pyplot as plt
-f = open(f"large.txt", 'r')
+f = open(f"small.txt", 'r')
 data = [i.rstrip() for i in f.readlines()]
 f.close()
 N = int(data[0])
@@ -15,6 +15,6 @@ fig.set_figwidth(14)
 ax.grid(True)
 
 ax.bar(np.arange(x.size), x, width = 0.5)
-plt.savefig("Result_large.png")
+#plt.savefig("Result_large.png")
 plt.show()
 
